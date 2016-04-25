@@ -1,0 +1,10 @@
+package com.sapient.compose;
+
+public class TestComposition {
+
+	public static void main(String[] args) {
+		Address address = new Address(101, "Jangpura", "ND","INDIA", 110014);
+
+	}
+
+}

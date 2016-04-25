@@ -8,6 +8,8 @@ public static void main(String[] args) {
 
 	Employee emp = new Employee("Ravi", 34);
 	
+	System.out.println(emp);
+	
 	Department department = new Department("2", emp);
 	
 	department.addEmployeeToDepartment();

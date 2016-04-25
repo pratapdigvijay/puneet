@@ -1,0 +1,25 @@
+package com.sapient.compose;
+
+
+
+class Number(){
+	int x;
+}
+
+public class PassByValue {
+
+	public static void main(String[] args) {
+		int x = 1;
+		System.out.println("Original x: " + x);
+		changeX(x);
+		System.out.println("After method call x:" + x);
+
+	}
+	
+	
+	public static void changeX(int x){
+		x = x + 1;
+		System.out.println("In ChangeX " + x);
+	}
+
+}

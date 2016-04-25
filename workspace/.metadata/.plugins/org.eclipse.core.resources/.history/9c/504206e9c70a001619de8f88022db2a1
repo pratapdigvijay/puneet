@@ -1,0 +1,17 @@
+package com.sapient.compose;
+
+public class PassByValue {
+
+	public static void main(String[] args) {
+		int x = 1;
+		sysout
+
+	}
+	
+	
+	public void changeX(int x){
+		x = x + 1;
+		System.out.println("In ChangeX " + x);
+	}
+
+}

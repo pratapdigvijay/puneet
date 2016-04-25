@@ -1,0 +1,11 @@
+package com.sapient.compose;
+
+public class Address {
+	
+	int houseNumber;
+	String locality;
+	String city;
+	String country;
+	int pinCode;
+
+}
