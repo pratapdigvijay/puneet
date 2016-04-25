@@ -1,0 +1,44 @@
+public class Employee {
+
+	public static void main(String[] args) {
+
+		String empName = "Ravi";
+		int deptNumber = 34;
+
+		switch (deptNumber) {
+
+		case 1:
+			System.out.println(empName + " added to Accounts Department");
+			break;
+		case 2:
+			System.out.println(empName + " added to Finance Department");
+			break;
+		case 3:
+			System.out.println(empName + " added to Marketing Department");
+			break;
+		case 4:
+			System.out.println(empName + " added to Technology Department");
+			break;
+		case 5:
+			System.out.println(empName + " added to Networking Department");
+			break;
+		default:
+			System.out.println("No such department available");
+
+		}
+
+		/*
+		 * if(deptNumber == 1){
+		 * 
+		 * } else if(deptNumber == 2){ System.out.println(empName +
+		 * " added to Accounts Department"); } else if(deptNumber == 3){
+		 * System.out.println(empName + " added to Finance Department"); } else
+		 * if(deptNumber == 4){ System.out.println(empName +
+		 * " added to Marketing Department"); } else if(deptNumber == 5){
+		 * System.out.println(empName + " added to Technology Department"); }
+		 * else{ System.out.println("No such department available"); }
+		 */
+
+	}
+
+}

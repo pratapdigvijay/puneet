@@ -1,0 +1,16 @@
+
+public class Employee {
+
+	public static void main(String[] args) {
+		
+		String empName = "Ravi";
+		int deptNumber = 3;
+		
+		
+		if(deptNumber == 1){
+			System.out.println(empName + "added to Networking Department");
+		}
+
+	}
+
+}

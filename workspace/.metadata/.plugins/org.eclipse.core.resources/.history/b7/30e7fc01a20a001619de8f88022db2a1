@@ -1,0 +1,22 @@
+
+public class Employee {
+
+	public static void main(String[] args) {
+		
+		String empName = "Ravi";
+		int deptNumber = 3;
+		
+		
+		if(deptNumber == 1){
+			System.out.println(empName + " added to Networking Department");
+		}
+		else if(deptNumber == 2){
+			System.out.println(empName + " added to Accounts Department");
+		}
+		else if(deptNumber == 3){
+			System.out.println(empName + " added to Finance Department");
+		}
+
+	}
+
+}

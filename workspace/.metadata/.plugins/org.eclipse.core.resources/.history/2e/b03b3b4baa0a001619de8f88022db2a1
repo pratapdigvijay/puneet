@@ -1,0 +1,17 @@
+import com.sapient.Employee;
+
+
+public class Test {
+	
+public static void main(String[] args) {
+
+		
+		Employee emp = new Employee("1", "Ravi");
+		/*emp.deptNumber = "1";
+		emp.empName = "Ravi";*/
+		
+		emp.addEmployeeToDepartment();
+
+	}
+	
+}
