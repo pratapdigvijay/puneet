@@ -10,6 +10,9 @@ public class Plane extends Vehicle{
 	}
 	
 	public void start(){
+		
+		super.start();
+		
 		engine.sparkEngine();
 		System.out.println("Starting Plane");
 		System.out.println("Can go:" + this.maxSpeed);
