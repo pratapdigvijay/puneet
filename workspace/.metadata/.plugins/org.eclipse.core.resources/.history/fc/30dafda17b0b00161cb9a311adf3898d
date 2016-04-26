@@ -1,0 +1,11 @@
+package day2.problem;
+
+public class PlaneEngine extends Engine{
+	public PlaneEngine(String make) {
+		this.make = make;
+	}
+	String make;
+	public void sparkEngine(){
+		System.out.println(this.make + " engine starting up");
+	}
+}

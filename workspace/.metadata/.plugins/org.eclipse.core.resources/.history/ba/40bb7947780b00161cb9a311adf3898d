@@ -1,0 +1,9 @@
+package day2.problem;
+
+public class Plane extends Vehicle{
+	int maxAltitude;
+	public void start(){
+		engine.sparkEngine();
+		System.out.println("Starting Vehicle");
+	}
+}

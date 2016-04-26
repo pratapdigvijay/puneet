@@ -1,0 +1,21 @@
+package day2.inhert;
+
+class Animal {
+
+	public void speak() {
+		System.out.println("Animal Speak");
+	}
+
+}
+
+class Tiger extends Animal {
+
+}
+
+public class Test {
+	public static void main(String[] args) {
+		
+		Animal animal = new Tiger();
+
+	}
+}

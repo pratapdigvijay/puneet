@@ -1,0 +1,11 @@
+package day2.problem;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Engine engine = new Engine("Ford");
+		Vehicle vehicle = new Vehicle(300, engine);
+
+	}
+
+}

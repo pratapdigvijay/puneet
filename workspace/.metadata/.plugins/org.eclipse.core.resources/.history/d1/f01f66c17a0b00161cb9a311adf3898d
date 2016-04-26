@@ -1,0 +1,15 @@
+package day2.problem;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Engine engine = new Engine("Ford");
+		Vehicle vehicle = new Vehicle(300, engine);
+		vehicle.start();
+
+		Engine planeEngine = new Engine("Boeing");
+		Plane plane = new Vehicle(300, planeEngine, 10000);
+		plane.start();
+	}
+
+}

@@ -1,0 +1,7 @@
+package day2.problem;
+
+public class Vehicle {
+
+	int maxSpeed;
+	Engine engine;
+}

@@ -1,0 +1,10 @@
+package day2.problem;
+
+public class Engine {
+	String make;
+	public void sparkEngine(){
+		System.out.println(this.make + " starting up");
+	}
+	
+	
+}

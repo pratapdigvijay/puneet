@@ -1,0 +1,20 @@
+package day2;
+
+public class Manager extends Employee {
+	
+	public Manager(){
+		super();
+	}
+	
+
+
+	boolean approveleaves;
+
+	public Manager(int id, String name, double salary, boolean approveleaves) {
+		super(id, name, salary);
+		this.approveleaves = approveleaves;
+	}
+
+
+
+}
