@@ -1,0 +1,15 @@
+package day3.collections;
+
+class Employee12{
+	int id;
+	List<Address> addresses;
+}
+
+public class NestedCollectionsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

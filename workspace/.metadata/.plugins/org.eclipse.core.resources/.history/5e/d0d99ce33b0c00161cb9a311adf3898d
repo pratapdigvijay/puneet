@@ -1,0 +1,21 @@
+package day3.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ListSortDemo {
+	static ArrayList list = new ArrayList();
+	
+	public static void main(String[] args) {
+		list.add("Mango");
+		list.add("Apple");
+		list.add("Grapes");
+		
+		System.out.println(list);
+		
+		Collections.sort(list);
+		
+		System.out.println(list);
+	}
+
+}

@@ -1,0 +1,5 @@
+package day4.exceptions;
+
+public class ExceptionHierarchyDemo {
+
+}

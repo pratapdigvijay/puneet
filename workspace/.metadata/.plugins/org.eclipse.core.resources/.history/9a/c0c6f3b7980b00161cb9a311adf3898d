@@ -1,0 +1,22 @@
+package day2.abt;
+
+public class RoadBiCycle extends BiCycle {
+
+	@Override
+	public void applyBrakes() {
+		speed = speed - 2;
+
+	}
+
+	@Override
+	public String toString() {
+		return "RoadBiCycle [speed=" + speed + "]";
+	}
+
+	@Override
+	public void speedUp() {
+		speed = speed + 2;
+
+	}
+
+}

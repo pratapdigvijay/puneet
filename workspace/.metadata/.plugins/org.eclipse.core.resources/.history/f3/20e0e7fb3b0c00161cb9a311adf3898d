@@ -1,0 +1,51 @@
+package day3.collections;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Employee {
+	
+	int id;
+	String name;
+	double salary;
+	
+	public Employee(){
+		super();
+	}
+	
+	public Employee(int id, String name, double salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary
+				+ "]";
+	}
+
+	
+
+}
+
+
+public class ListSortDemo {
+	static ArrayList list = new ArrayList();
+	
+	public static void main(String[] args) {
+		
+		Employee emp = new Employee(12,"Ravi",33344);
+		list.add("Mango");
+		list.add("Apple");
+		list.add("Grapes");
+		
+		System.out.println(list);
+		
+		Collections.sort(list);
+		
+		System.out.println(list);
+	}
+
+}

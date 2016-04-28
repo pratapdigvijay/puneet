@@ -1,0 +1,32 @@
+package day4.exceptions;
+
+class MyCheckedException extends Exception{
+	
+	MyCheckedException(){
+		
+	}
+	MyCheckedException(String message){
+		super(message);
+	}
+	
+}
+
+class MyCheckedException extends RuntimeException{
+	
+	MyCheckedException(){
+		
+	}
+	MyCheckedException(String message){
+		super(message);
+	}
+	
+}
+
+
+public class CustomExceptionDemo {
+	public static void main(String[] args) throws MyCheckedException {
+		MyCheckedException exception = new MyCheckedException();
+		throw exception;
+	}
+
+}

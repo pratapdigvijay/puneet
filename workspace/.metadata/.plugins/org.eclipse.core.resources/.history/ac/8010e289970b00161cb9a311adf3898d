@@ -1,0 +1,13 @@
+package day2.abt;
+
+public abstract class BiCycle {
+	
+	public void applyBrakes(){
+		
+	}
+	
+	public void speedUp(){
+		
+	}
+
+}

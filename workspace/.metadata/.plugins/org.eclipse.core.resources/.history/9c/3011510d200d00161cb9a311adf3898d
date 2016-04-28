@@ -1,0 +1,20 @@
+package day4.exceptions;
+
+public class ExceptionHierarchyDemo {
+	
+	public static void m3(){
+		
+	}
+	public static void m2(){
+		
+	}
+	
+	public static void m1(){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package day3.collections;
+
+import java.util.ArrayList;
+
+public class ListSortDemo {
+	static ArrayList list = new ArrayList();
+	
+	public static void main(String[] args) {
+		list.add("Mango");
+		list.add("Apple");
+		list.add("Grapes");
+		
+	}
+
+}

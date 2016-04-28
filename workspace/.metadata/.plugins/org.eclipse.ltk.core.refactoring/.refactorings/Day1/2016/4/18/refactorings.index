@@ -1,2 +1,4 @@
 1461561009228	Move compilation unit
 1461650869004	Rename type 'Animal'
+1461833811304	Rename local variable 'i'
+1461834004654	Convert local variable 'result' to field

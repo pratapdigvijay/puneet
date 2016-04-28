@@ -1,0 +1,23 @@
+package day4.exceptions;
+
+public class ExceptionHierarchyDemo {
+	
+	public static void m3() {
+		throw new RuntimeException();
+	}
+	public static void m2() throws Exception{
+		m3();
+	}
+	
+	public static void m1() throws Exception{
+		m2();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		
+		m1();
+		System.out.println("Program ends here--");
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package day3.collections;
+
+import java.util.ArrayList;
+
+import day2.Employee;
+
+
+public class ListDemo {
+	
+	public static void main(String[] args) {
+		ArrayList list = new ArrayList();
+		list.add("1");
+		list.add(new Object());
+		list.add(new Employee(123, "Ravi", 34253));
+		
+		
+		System.out.println(list.get(2));
+	}
+
+}

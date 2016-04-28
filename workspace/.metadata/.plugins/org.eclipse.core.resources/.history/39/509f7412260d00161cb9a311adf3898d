@@ -1,0 +1,14 @@
+package day4.exceptions;
+
+class MyCheckedException extends Exception{
+	
+	MyCheckedException(String message){
+		
+	}
+	
+}
+
+
+public class CustomExceptionDemo {
+
+}

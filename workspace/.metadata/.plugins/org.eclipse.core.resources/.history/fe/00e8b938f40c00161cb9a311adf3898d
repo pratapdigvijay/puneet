@@ -1,0 +1,6 @@
+package day3.collections;
+
+public class Address {
+	String locality;
+
+}

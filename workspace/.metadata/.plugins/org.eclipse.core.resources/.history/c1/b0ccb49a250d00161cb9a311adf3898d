@@ -1,0 +1,10 @@
+package day4.exceptions;
+
+class MyCheckedException extends Exception{
+	
+}
+
+
+public class CustomExceptionDemo {
+
+}

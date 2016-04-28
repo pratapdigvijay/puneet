@@ -1,0 +1,22 @@
+package day2.abt;
+
+public class MountainBiCycle extends BiCycle {
+
+	@Override
+	public void applyBrakes() {
+		speed--;
+		
+	}
+
+	@Override
+	public void speedUp() {
+		speed++;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "MountainBiCycle [speed=" + speed + "]";
+	}
+
+}

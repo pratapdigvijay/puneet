@@ -1,0 +1,18 @@
+package day2.abt;
+
+public abstract class BiCycle {
+	
+	int speed = 0;
+	
+	BiCycle(int speed){
+		this.speed = speed;
+	}
+	
+	public abstract void speedUp();
+	
+	public void applyBrakes() {
+		speed--;
+		
+	}
+
+}

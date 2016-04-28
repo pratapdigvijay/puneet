@@ -1,0 +1,17 @@
+package day2.abt;
+
+public class RoadBiCycle extends BiCycle {
+
+	@Override
+	public void applyBrakes() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void speedUp() {
+		speed = speed + 2;
+
+	}
+
+}

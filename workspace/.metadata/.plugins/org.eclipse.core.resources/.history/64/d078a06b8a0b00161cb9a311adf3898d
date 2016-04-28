@@ -1,0 +1,8 @@
+package day2.problem;
+
+public class Coffee {
+	
+	String flavor;
+	String sugar;
+
+}

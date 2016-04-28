@@ -1,0 +1,21 @@
+package day2.abt;
+
+public class MountainBiCycle extends BiCycle {
+
+	MountainBiCycle(int speed){
+		super(speed);
+	}
+	
+
+	@Override
+	public void speedUp() {
+		speed++;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "MountainBiCycle [speed=" + speed + "]";
+	}
+
+}

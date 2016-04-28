@@ -1,0 +1,16 @@
+package day3.collections;
+
+public class Address implements Comparable{
+	String locality;
+
+	public Address(String locality) {
+		super();
+		this.locality = locality;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [locality=" + locality + "]";
+	}
+
+}

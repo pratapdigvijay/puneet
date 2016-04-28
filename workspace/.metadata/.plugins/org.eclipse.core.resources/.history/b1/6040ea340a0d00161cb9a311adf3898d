@@ -1,0 +1,43 @@
+package day4.exceptions;
+
+import day2.Employee;
+
+public class ExceptionsDemo {
+	
+	public static void calculateLoan(int age, double salary) throws Exception{
+		if(age<18){
+			throw new Exception();
+		}
+			
+	}
+	
+	public static void main(String[] args) {
+		Employee emp = null;
+		
+		try {
+			calculateLoan(23, 3532235);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		try {
+			calculateLoan(2, 3434343);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		emp.getSalary();
+	}
+
+}
+
+
+/*try{
+	//Guarded Region
+}
+catch(Exception e){
+	//Handling
+}*/

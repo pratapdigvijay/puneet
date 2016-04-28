@@ -1,0 +1,17 @@
+package day2.problem;
+
+public class Coffee {
+	
+	String flavor;
+	String sugar;
+	
+	
+	public Coffee(String flavor, String sugar) {
+		super();
+		this.flavor = flavor;
+		this.sugar = sugar;
+	}
+	
+	
+
+}

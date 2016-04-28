@@ -1,0 +1,30 @@
+package day3.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Employee12{
+	int id;
+	List<Address> addresses;
+	public Employee12(int id, List<Address> addresses) {
+		super();
+		this.id = id;
+		this.addresses = addresses;
+	}
+	
+}
+
+public class NestedCollectionsDemo {
+
+	public static void main(String[] args) {
+
+		Address residentialAddress = new Address("Jangpura");
+		Address officeAddress = new Address("Gurgoan");
+		
+		List<Address> addresses = new ArrayList<>();
+		addresses.add(residentialAddress);
+		addresses.add(officeAddress);
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package day3.collections;
+
+import java.util.ArrayList;
+
+public class ListSortDemo {
+	ArrayList list = new ArrayList();
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
