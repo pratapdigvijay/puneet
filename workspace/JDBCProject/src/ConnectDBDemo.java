@@ -3,8 +3,23 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.mysql.jdbc.PreparedStatement;
+
 
 public class ConnectDBDemo {
+	
+	
+	
+	
+	public List<Employee> getEmployeeBySalary(double salary){
+		
+		//JDBC
+		PreparedStatement stmt 
+		
+		"Select * from Employee where salary > ?"
+		
+		stmt.setDouble(1, salary);
+	}
 
 	public static void main(String[] args) {
 		try {
