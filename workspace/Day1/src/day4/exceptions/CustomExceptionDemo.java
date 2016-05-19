@@ -25,8 +25,18 @@ class MyUnCheckedException extends RuntimeException{
 
 public class CustomExceptionDemo {
 	public static void main(String[] args) {
+		
 		MyUnCheckedException exception = new MyUnCheckedException();
-		throw exception;
+		
+		Exception composedException = new Exception("New Exception", exception);
+		
+		
+		try {
+			throw composedException;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

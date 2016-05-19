@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*Presenting content*/
+        .redBackground {
+            background-color: red;
+            color: blue;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<header class="redBackground">
+
+    Header Content (Menus, Logos, Search Bars, Login/Logout)
+</header>
+<section>
+    <p><a href="mailto:capabilityTeam@sapient.com">Click here</a></p>
+    <p>Main Content Appears <p> <button onclick="changeContent()">Change Content</button>
+    <br>
+    <p>Copy of - Main Content Appears<p>
+</section>
+<footer class="redBackground">
+    Legal Info, Contact Us, Services
+</footer>
+
+<script>
+
+    function changeContent(){
+        //Read the existing content
+        var str = document.getElementsByTagName('p')[0].innerHTML
+        // reverse it
+        var reversedStr = str.split('').reverse().join('');
+        // write the reversed content back
+        document.getElementsByTagName('p')[0].innerHTML = reversedStr
+
+    }
+
+</script>
+</body>
+</html>

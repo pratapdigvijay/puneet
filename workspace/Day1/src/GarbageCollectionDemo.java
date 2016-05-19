@@ -7,20 +7,24 @@ public class GarbageCollectionDemo {
 
 		String str= "";
 		
+		StringBuffer buffer = new StringBuffer("");
+		
 		ArrayList list = new ArrayList();
 
-		for(int i=0;i<100000000;i++){
+		for(int i=0;i<100;i++){
 			
-			str = str + i;
+//			str = str + i;
+			buffer.append(i);
 			
-			
-			try {
+			/*try {
 				Thread.sleep(20);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 		}
+		
+		System.out.println(buffer.toString());
 
 	}
 
