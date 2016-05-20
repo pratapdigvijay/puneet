@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 import com.sapient.entity.User;
+import com.sapient.service.UserService;
 
 /**
  * Servlet implementation class RegisterServlet
@@ -22,15 +23,25 @@ public class RegisterServlet extends HttpServlet {
 		
 		System.out.println("Request");
 		System.out.println(request.getParameter("str"));
-		
+		// Collect request string
 		String jsonInString  = request.getParameter("str");
-		
+		// Convert to Java object from JSON string
 		Gson gson = new Gson();
 		User user = gson.fromJson(jsonInString, User.class);
 		System.out.println(user);
 		
+		//Register User
+		UserService service = new UserService();
+		boolean result = service.register(user);
+		
+		String responseString = "{\"success\" : false}";
+		if(result){
+			responseString = "{\"success\" : true}";
+		}
+		
+		//Write json string back
 		response.setContentType("application/json");
-		response.getWriter().println("{\"success\" : false}");
+		response.getWriter().println(responseString);
 	}
 
 }
