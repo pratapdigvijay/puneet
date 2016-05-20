@@ -10,8 +10,8 @@
   <div id="message"> </div>
     
         <input id="email" type="email" name="email" placeholder="Enter Your Email" value="abcd@gmail.com" required autofocus/>
-        <input type=password name="pwd" placeholder="Enter Your Passord"/>
-        <input type=text name="confirmpwd" placeholder="Confirm Your Password"/>
+        <input id="pwd" type=password name="pwd" placeholder="Enter Your Passord"/>
+        <input id="confirmpwd" type=text name="confirmpwd" placeholder="Confirm Your Password"/>
         
         
 
@@ -22,8 +22,14 @@
         $(document).ready(function(){
             console.log('abcd');
             console.log($("#email").val())
+            console.log($("#pwd").val())
+            console.log($("#confirmpwd").val())
             
-            var dataObj = {name: 'Ravi'};
+            var dataObj = {email: $("#email").val(), 
+            	pwd: $("#pwd").val(), 
+            	confirmPwd: $("#confirmpwd").val()
+            	};
+            
             $("#submitBtn").click(function(){
                 $.ajax(
                     {url: "RegisterServlet", 
