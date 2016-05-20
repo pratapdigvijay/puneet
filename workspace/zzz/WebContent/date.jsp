@@ -8,8 +8,22 @@
 </head>
 <body>
 
-Current date is :  <% out.println(new Date()); %>
+<%! int i = 0;  %>
 
+Total number of visits: <%
+out.println(++i);
+%>
+<br>
+<br>
+Current date is :  
+<% 
+out.println(new Date());
+out.println("<br>");
+out.println("Another line");
+
+%>
+<br>
+Current date is : <%= new Date() %>
 
 </body>
 </html>

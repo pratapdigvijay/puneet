@@ -1,11 +1,17 @@
 package com.sapient;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.sapient.entity.User;
+import com.sapient.service.IUserService;
+import com.sapient.service.UserService;
 
 /**
  * Servlet implementation class UserServlet
@@ -20,15 +26,28 @@ public class UserServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userName = request.getParameter("uname");
 		String password = request.getParameter("pwd");
-		System.out.println(userName);
-		System.out.println(password);
-		if(userName.equals(password)){
-			response.getWriter().println("<h1>Authenticated</h1>");
-			
+		
+		
+		//Logic Delegation
+		User user = new User(userName,password );
+		IUserService service = new UserService();
+		boolean result = service.authenticate(user);
+		
+		//Set the model
+		request.setAttribute("userobj", user);
+		
+		
+		//View Delegation
+		RequestDispatcher dispatcher = request.getRequestDispatcher("profile.jsp");
+		if(result){
+			dispatcher.forward(request, response);
 		}
 		else{
-			response.getWriter().println("<h1>Authentication failure</h1>");
+			// Dispatch to an error page
 		}
+		
+		
+		
 	}
 	
 	public void destroy(){
