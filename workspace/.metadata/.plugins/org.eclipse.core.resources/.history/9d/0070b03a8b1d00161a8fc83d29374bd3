@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <link href="main.css" rel=stylesheet />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+    <button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+    
+    
+<form method="POST" action="/someurl">
+ <input id="email" type="email" name="uname" placeholder="Enter Your Name" onblur="validateEmail()" /> <span id="message" class="error">Your email should be atleast 6 characters</span>
+ <input type="password" name="pwd" placeholder="Enter Your Password"/>   
+    <button onclick="addItems()">Add Items</button>
+    
+
+    
+    <input type=submit value="Submit"/>
+    </form>
+    
+    
+    <ol id="mylist">
+    </ol>
+    
+    <script>
+        
+        function validateEmail(){
+            var str = document.getElementById("email").value;
+            if(str.length < 6){
+                document.getElementById("message").style.display = "block";
+            }
+            else{
+                document.getElementById("message").className = "success";
+                document.getElementById("message").innerHTML = 'Success'
+            }
+        }
+        
+        function addItems(){
+            var listItems = ['a','b','c','d']
+        var elements = ''
+        
+        for(var i=0;i<listItems.length; i++){
+            elements = elements + '<li>' + listItems[i] + '</li>'
+        }
+        document.getElementById('mylist').innerHTML = elements
+        
+        }
+        
+        
+    </script>
+</body>
+</html>

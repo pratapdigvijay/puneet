@@ -1,0 +1,8 @@
+package com.sapient.entity;
+
+public class User {
+
+	String email;
+	String pwd;
+	String confirmpwd
+}

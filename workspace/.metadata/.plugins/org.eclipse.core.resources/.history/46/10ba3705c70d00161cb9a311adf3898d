@@ -1,0 +1,15 @@
+
+public class EmployeeDAO {
+	
+	
+	public boolean addEmployee(Employee emp){
+		
+		
+	}
+	
+	
+	public List<Employee> fetchEmployeesBySalary(double salary){
+		
+	}
+
+}

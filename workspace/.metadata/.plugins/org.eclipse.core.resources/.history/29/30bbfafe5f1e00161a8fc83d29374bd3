@@ -1,0 +1,39 @@
+package com.sapient.entity;
+
+public class User {
+
+	String email;
+	String pwd;
+	String confirmPwd;
+	
+	
+	@Override
+	public String toString() {
+		return "User [email=" + email + ", pwd=" + pwd + ", confirmpPwd="
+				+ confirmpPwd + "]";
+	}
+	public User(String email, String pwd, String confirmpPwd) {
+		super();
+		this.email = email;
+		this.pwd = pwd;
+		this.confirmpPwd = confirmpPwd;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+	public String getConfirmpPwd() {
+		return confirmpPwd;
+	}
+	public void setConfirmpPwd(String confirmpPwd) {
+		this.confirmpPwd = confirmpPwd;
+	}
+}

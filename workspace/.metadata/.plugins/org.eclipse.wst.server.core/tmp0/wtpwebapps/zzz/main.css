@@ -1,0 +1,19 @@
+p {
+    color:red;
+    font-size: 24px;
+    margin: 2 4 5px;
+}
+p.green {
+    color:green;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    display: none
+}
+
+.success {
+    color: green;
+    font-style: italic
+}

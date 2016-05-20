@@ -1,0 +1,36 @@
+package com.sapient;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class UserServlet
+ */
+@WebServlet("/UserServlet")
+public class UserServlet extends HttpServlet {
+	
+	public void init(){
+		System.out.println("Servlet is initialized");
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String userName = request.getParameter("uname");
+		String password = request.getParameter("pwd");
+		System.out.println(userName);
+		System.out.println(password);
+		if(userName.equals(password)){
+			response.getWriter().println("<h1>Authenticated</h1>");
+			
+		}
+		else{
+			response.getWriter().println("<h1>Authentication failure</h1>");
+		}
+	}
+
+	
+
+}

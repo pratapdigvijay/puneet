@@ -1,0 +1,6 @@
+
+public class Utility {
+	
+	static final int ELIGIBILITY_AGE = 18;
+
+}

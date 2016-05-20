@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.css" rel="stylesheet"/>
+</head>
+<body>
+    
+  <div id="message"> </div>
+    
+        <input id="email" type="email" name="email" placeholder="Enter Your Email" value="abcd@gmail.com" required autofocus/>
+        <input type=password name="pwd" placeholder="Enter Your Passord"/>
+        <input type=text name="confirmpwd" placeholder="Confirm Your Password"/>
+        
+        
+
+    <button id="submitBtn">Register User </button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log('abcd');
+            console.log($("#email").val())
+            
+            var dataObj = {email: $("#email").val(), };
+            $("#submitBtn").click(function(){
+                $.ajax(
+                    {url: "RegisterServlet", 
+                     method: 'POST',
+                     data: dataObj,
+                     success: function(result){
+                         console.log('Data from the server');   
+                    	 console.log(result);
+                    	 
+                    	 if(result.success){
+                    		$("#message").html('Registration Successful')
+                    		 
+                    	 }
+                    	 else{
+                    		 $("#message").html('Registration Failure')
+                    	 }
+                    }}
+                );
+            })
+        })
+    
+    	
+    </script>
+</body>
+</html>
