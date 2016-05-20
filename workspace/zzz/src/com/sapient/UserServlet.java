@@ -21,6 +21,7 @@ public class UserServlet extends HttpServlet {
 	
 	public void init(){
 		System.out.println("Servlet is initialized");
+		
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
