@@ -6,6 +6,8 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class TestEmployee {
+	
+	
 
 	public static void main(String[] args) {
 
