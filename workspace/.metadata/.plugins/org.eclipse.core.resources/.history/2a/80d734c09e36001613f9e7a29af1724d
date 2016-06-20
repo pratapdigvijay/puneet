@@ -1,0 +1,26 @@
+package com.sapient.entity;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+
+
+		Employee employee = new Employee("Ravi");
+		
+		// HIbernate Code 
+		
+//		Step 1. Create a SessionFactory
+		
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		
+//		Step 2. Get a session from sessionFactory
+		
+		api.save(employee);
+		
+
+	}
+
+}

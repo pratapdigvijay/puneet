@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.sapient.service&apos; to &apos;UserModule/src&apos;&#x0D;&#x0A;- Original project: &apos;zzz&apos;&#x0D;&#x0A;- Destination element: &apos;UserModule/src&apos;&#x0D;&#x0A;- Original element: &apos;zzz/src/com.sapient.service&apos;" description="Copy package" destination="=UserModule/src" element1="/src&lt;com.sapient.service" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1463735928542" version="1.0"/>
+</session>

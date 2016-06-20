@@ -1,0 +1,19 @@
+package com.sapient.service;
+
+import com.sapient.entity.User;
+
+public class UserService implements IUserService{
+
+	@Override
+	public boolean authenticate(User user) {
+	
+		return false;
+	}
+
+	@Override
+	public boolean register(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.sapient.entity;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+
+
+		Employee employee = new Employee("Ravi");
+		
+		
+		
+
+	}
+
+}

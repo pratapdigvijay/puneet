@@ -1,0 +1,15 @@
+package com.sapient.entity;
+
+public class Employee {
+	
+	private long id;
+	
+	private String name;
+
+	public Employee(String name) {
+		super();
+		this.name = name;
+	}
+
+
+}

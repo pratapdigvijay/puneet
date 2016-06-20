@@ -1,9 +1,0 @@
-package day2.abt;
-
-public abstract class BiCycle {
-	
-	public abstract void applyBrakes();
-	
-	public abstract void speedUp();
-
-}

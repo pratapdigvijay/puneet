@@ -1,8 +1,0 @@
-package day2;
-
-public class TestIncrementSalaries {
-	public static void main(String[] args) {
-		
-	}
-
-}

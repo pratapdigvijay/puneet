@@ -1,9 +1,0 @@
-package day3.collections;
-
-public class HashingDemo {
-	
-	public static void main(String[] args) {
-		
-	}
-
-}

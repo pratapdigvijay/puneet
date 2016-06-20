@@ -1,0 +1,27 @@
+package com.sapient.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.sapient.entity.User;
+
+public class UserService implements IUserService{
+
+	static Map<String, User> users = new HashMap<>(); 
+	
+	@Override
+	public boolean authenticate(User user) {
+	
+		return false;
+	}
+
+	@Override
+	public boolean register(User user) {
+		if(user.getPwd().equals(user.getConfirmPwd())){
+			users.add(user);
+			return true;
+		}
+		return false;
+	}
+
+}

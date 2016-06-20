@@ -1,9 +1,0 @@
-package com.sapient.compose;
-
-public class Employee {
-	
-	int id;
-	String name;
-	Address address;
-
-}
