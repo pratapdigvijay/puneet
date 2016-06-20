@@ -1,14 +1,10 @@
 INDEX VERSION 1.126+C:\sapientjava101\workspace\.metadata\.plugins\org.eclipse.jdt.core
-3435700904.index
 2957559923.index
-1251650299.index
 2187046997.index
 1154434882.index
 2449241556.index
-3101435524.index
-2222049449.index
-3842829589.index
 2427829388.index
+3120153947.index
 300339462.index
 3953194841.index
 3127338199.index
@@ -25,18 +21,12 @@ INDEX VERSION 1.126+C:\sapientjava101\workspace\.metadata\.plugins\org.eclipse.j
 2630083216.index
 1764607586.index
 3406229456.index
-1127115529.index
 1988661136.index
 2210355142.index
-1189348113.index
 898876063.index
 183739763.index
 1784471929.index
-643708758.index
 683027913.index
-10098949.index
 3122319711.index
 3599147379.index
 4070403987.index
-3453968690.index
-2816233365.index
